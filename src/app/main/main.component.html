@@ -1,0 +1,14 @@
+<button (click)="loadData()">Load data</button>
+
+<div *ngIf="!isLoading; else loading">
+  <div *ngIf="items.length > 0">
+    <h3>Data:</h3>
+    <ul>
+      <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
+  </div>
+</div>
+
+<ng-template #loading>
+  <div>Loading...</div>
+</ng-template>

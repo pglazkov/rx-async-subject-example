@@ -1,0 +1,22 @@
+header {
+  height: 50px;
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  .sidebar {
+    flex: 0 0 12em;
+  }
+  
+  .main {
+    flex: 1;
+    outline: 1px dashed red;
+  }
+}
+
