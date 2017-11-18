@@ -1,5 +1,5 @@
 Item count: <span *ngIf="getItemCount() | async; let count; else waiting">{{count}}</span>
 
 <ng-template #waiting>
-  <span>waiting...</span>
+  <span class="waiting">waiting...</span>
 </ng-template>

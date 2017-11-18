@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MainComponent } from './main/main.component';
-import { DataService } from './data.service';
+import { SharedData } from './shared-data';
 
 import 'rxjs/add/operator/delay';
 import 'rxjs/add/operator/map';
@@ -21,7 +21,7 @@ import 'rxjs/add/observable/of';
     CommonModule,
     BrowserModule
   ],
-  providers: [DataService],
+  providers: [SharedData],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

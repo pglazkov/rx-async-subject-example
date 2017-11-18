@@ -1,0 +1,29 @@
+p {
+  font-family: Lato;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;  
+}
+
+.container .sidebar {
+  outline: 1px dashed blue;
+  padding: 0px 5px 5px 5px;
+  margin-right: 10px;
+  flex: 0 0 12em;
+}
+  
+.container .main {
+  flex: 1;
+  outline: 1px dashed red;
+  padding: 0px 5px 5px 5px;
+}
